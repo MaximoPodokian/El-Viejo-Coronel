@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* ***************Header************* */
+.header {
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2 {
+  color: white;
+  font-size: xx-large;
+}
+
+h3 {
+  color: white;
+  font-size: small;
+  text-align: center;
+}
+
+.logo {
+  width: 6rem;
+}
+
+/* **** Desde Aca = Menu de Navegacion dentro del sitio */
+.listaNav {
+  display: flex;
+}
+
+.listaNav li {
+  padding: 0 2rem;
+}
+
+.containerNav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.hover1:hover{
+  background-color: black;
+  color: white;
+  
+  transition: all 1s;
+}
+
+
+      
+/* ******hasta aca Header + Nav************************** */
+h1 {
+  color: crimson;
+  font-size: xx-large;
+}
+
+.imgPrincipal {
+  height: 40rem; 
+  padding: 10px; margin: 10px; border: 2px solid black; float: left; width: 1800px;
+
+}
+
+.main {
+  padding: 0 3rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.containerPrincipal {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+/* desde aca Footer */
+
+.listaNavFooter {
+  display: flex;
+  font-size: 4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.footer1 {
+  text-align: left;
+  font-size: x-large;
+}
+.footer2 {
+  text-align: right;
+  font-size: x-large;
+}
+
+.listaNavFooter {
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-color: rgb(212, 88, 113);
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  flex-grow: 1;
+}
+/* ****** Quienes Somos************* */
+.quienesSomos{
+  border: crimson solid 3 px;
+}
+.quienesSomos p {
+  margin: 10px 10px 15 px 10 px 20px;
+  padding: 200px;
+  border: 1px solid black;
+  
+
+}
+
+
+
+/* **********************Ofertas************************** */
+.contenedorImagenesOfertas {
+  /* position: relative; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: crimson 2px;
+  background-color: rgb(189, 154, 143);
+  flex-direction: row; 
+}
+/* ***********Formulario de Contacto************* */
+form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.formulario {
+  margin: auto;
+  padding: 0 auto;
+  height: 500px;
+  width: 500px;
+  background: radial-gradient(pink, #a23238);
+  border: 3 px solid crimson ;
+  border-radius: 50%;  
+
+}
+
+
+/*GRID PARA LA TIENDA Y GALERIA MULTIMEDIA*/
+
+/*APLICAMOS ESTILO */
+
+/* .item {
+  background-color: #87cefa;
+  border: 1px black solid;
+} */
+
+
+/*CONTENEDOR PADRE*/
+
+.gridPadreMultimedia {
+  margin: 0%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  grid-template-rows: auto auto;
+  column-gap: 15px;
+  row-gap: 15px; 
+  /* gap: 20px 5px; */
+}
+
+/************ GRID AREAS PARA LA TIENDA Y LA GALERIA MULTIMEDIA*************/
+
+/* .contenedor {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "sectionA"
+    "sectionB"
+    "aside"
+    "footer"
+    ;
+}
+
+
+
+header {
+    background-color: azure;
+    grid-area: header;
+}
+
+nav {
+    background-color: blanchedalmond;
+    grid-area: nav; */
+/* *********full responsive**************** */
+ /* @media (min-width:750px) {
+  .containerNav nav ul li a {
+      display:none;
+    }
+    }
+
+    @media (min-width:750px) {
+      .listaNavFooter p {
+          display: none;    }
+        }    */
+
+        /* ******Transiciones para los botones */
+        
+        .hover2:hover{
+          background-color: #a23238;
+          color: white;
+          height: 25px;
+          height: 25px;
+          transition: all 2s;
+        }
