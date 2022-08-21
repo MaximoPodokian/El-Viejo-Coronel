@@ -25,41 +25,33 @@ h3 {
 .logo {
   width: 6rem;
 }
-
-/* **** Desde Aca = Menu de Navegacion dentro del sitio */
-.listaNav {
-  display: flex;
-}
-
-.listaNav li {
-  padding: 0 2rem;
-}
-
-.containerNav {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
+/* ******hasta aca Header ************************** */
+/* Menu de Navegacion */
 .hover1:hover{
-  background-color: black;
+  background-color: crimson;
+  border-radius: 10px;
   color: white;
-  
   transition: all 1s;
-}
+} 
+/* hasta aca Menu de Navehacion */     
 
-
-      
-/* ******hasta aca Header + Nav************************** */
 h1 {
   color: crimson;
-  font-size: xx-large;
+  font-size: xx-large ;
+  font-weight: bold;
+  color: white;
 }
 
-.imgPrincipal {
-  height: 40rem; 
+ .imgPrincipal {
+  height: 550px; 
   padding: 10px; margin: 10px; border: 2px solid black; float: left; width: 1800px;
 
 }
+@media (max-width:993px) {
+  .imgPrincipal {
+      height: 200px;  
+       }
+    }  
 
 .main {
   padding: 0 3rem;
@@ -106,54 +98,46 @@ h1 {
   display: flex;
   bottom: 0;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   flex-grow: 1;
 }
+
+@media (max-width:993px) {
+  .footer1 {
+      display: none; 
+       }
+    }  
+     /*fin footer */
 /* ****** Quienes Somos************* */
 .quienesSomos{
   border: crimson solid 3 px;
 }
 .quienesSomos p {
   margin: 10px 10px 15 px 10 px 20px;
-  padding: 200px;
+  padding: 100px;
   border: 1px solid black;
-  
-
 }
 
-
+/* Fin Quienes Somos */
 
 /* **********************Ofertas************************** */
-.contenedorImagenesOfertas {
-  /* position: relative; */
-  display: flex;
+/* .contenedorImagenesOfertas {
+   position: relative; 
+   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   border: crimson 2px;
   background-color: rgb(189, 154, 143);
   flex-direction: row; 
+}  */
+.imgCarrousel{
+  height: 650px;
+  object-fit: cover;
+}
+.textoCarrousel{
+  color: crimson;
 }
 /* ***********Formulario de Contacto************* */
-form{
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- 
-}
-.formulario {
-  margin: auto;
-  padding: 0 auto;
-  height: 500px;
-  width: 500px;
-  background: radial-gradient(pink, #a23238);
-  border: 3 px solid crimson ;
-  border-radius: 50%;  
-
-}
 
 
 /*GRID PARA LA TIENDA Y GALERIA MULTIMEDIA*/
