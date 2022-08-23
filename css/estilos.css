@@ -69,8 +69,13 @@ h1 {
   align-items: center;
 }
 /* desde aca Footer */
+.colorButtom{
+  background-color: crimson;
+  border: black;
+  color:white bold;
+}
 
-.listaNavFooter {
+/* .listaNavFooter {
   display: flex;
   font-size: 4rem;
 }
@@ -106,7 +111,7 @@ h1 {
   .footer1 {
       display: none; 
        }
-    }  
+    }   */
      /*fin footer */
 /* ****** Quienes Somos************* */
 .quienesSomos{
@@ -123,7 +128,9 @@ h1 {
 /* **********************Ofertas************************** */
 
 .imgCarrousel{
+
   height: 600px;
+  width: 300px;
   object-fit: cover;
 }
 .textoCarrousel{
