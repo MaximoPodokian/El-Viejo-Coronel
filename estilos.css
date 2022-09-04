@@ -1,38 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-align: none;
-  list-style: none;
-}
-
-/* ***************Header************* */
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .header {
   background-color: crimson;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
-
-h2 {
-  color: white;
+.header h1 {
+  display: flex;
   font-size: xx-large;
-}
-
-h3 {
+  font-weight: bold;
   color: white;
-  font-size: small;
   text-align: center;
+  margin-top: 2rem;
 }
-
-.logo {
-  width: 6rem;
+h2 {
+  color: crimson;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Menu de Navegacion */
 .navbar-brand {
   text-decoration: none;
 }
@@ -44,35 +27,43 @@ h3 {
   transition: all 1s;
 }
 
-/* hasta aca Menu de Navegacion */
-h1 {
-  color: crimson;
-  font-size: xx-large;
-  font-weight: bold;
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  text-align: none;
+  list-style: none;
 }
+
+/* ***************Header************* */
 
 .imgPrincipal {
-  height: 650px;
-  padding: 10px;
-  margin: 10px;
-  border: 2px solid crimson;
-  float: left;
-  width: 1800px;
+  max-height: 700px;
+  padding: 10px; margin: 10px; border: 2px solid crimson; width: 1700px;
+  margin-left: auto; 
+  margin-right: auto;
+ 
+}
+/*responsive para seccion home*/
+      @media (max-width:993px) {
+        .imgPrincipal {
+          height: 200px;  
+            }
+        }  
+
+
+h3 {
+  color: white;
+  font-size: small;
+  text-align: center;
 }
 
-@media (max-width: 993px) {
-  .imgPrincipal {
-    height: 200px;
-  }
+.logo {
+  width: 6rem;
 }
+
+
 .main {
   padding: 0 3rem;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 2rem;
 }
 
 .containerPrincipal {
@@ -90,13 +81,19 @@ h1 {
 }
 
 /* ****** Quienes Somos************* */
-.quienesSomos p {
-  border: crimson solid 2px;
-  margin: 10px 10px 15px 10px 20px;
-  padding: 180px;
+.subtitulo {
+  text-align: center;
 }
 
-/* Fin Quienes Somos */
+.quienesSomos {
+  border: crimson solid 2px;
+  margin: 10px 10px 15px 10px 20px;
+  padding: 100px;
+  text-align: center;
+  font-size: x-large;
+  text-align: center;
+}
+
 /* **********************Ofertas************************** */
 .imgCarrousel {
   margin: 5px;
@@ -110,28 +107,29 @@ h1 {
   color: crimson;
 }
 
-/* ***********Formulario de Contacto************* */
-.fondoBody {
-  background-color: radial-gradient(#a6afa6, #361736 167, 92, 117);
-}
-
-/*GRID PARA LA TIENDA Y GALERIA MULTIMEDIA*/
-.gridPadreMultimedia {
-  margin: 0%;
-  margin: 200px;
+/*GRID  GALERIA MULTIMEDIA*/
+.PadreMultimedia {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: auto auto;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-  row-gap: 15px;
+  margin: 30px;
+  padding: 10px; 
+  grid-template-columns: 400px 400px; 
+  grid-template-rows: 200px 100px 40px 60px;
+  justify-content: center;
+
 }
 
-/************ GRID AREAS PARA LA TIENDA Y LA GALERIA MULTIMEDIA*************/
+@media (max-width: 993px) {
+  .gridPadreMultimedia {
+    grid-template-columns: 1fr;
+  }
+}
+/************ TIENDA *************/
+.p-tienda {
+  text-align: center;
+}
+
 .card {
-  margin: 0%;
   margin: auto;
-  border-bottom: 10px;
 }
 
 .hover2:hover {
@@ -140,4 +138,18 @@ h1 {
   height: 25px;
   height: 25px;
   transition: all 2s;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*form contacto*/
+.contenedorFC{
+  max-height: 700px;
+  padding: 10px; margin: 10px; border: 2px solid crimson; width: 1700px;
+  margin-left: auto; 
+  margin-right: auto;
+
+}
+
+/* .fondoBody{
+  background-image: url(Img/valleDeUco.jpg);
+  background-color: transparent;
+} */

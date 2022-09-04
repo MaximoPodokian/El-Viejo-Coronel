@@ -1,0 +1,7 @@
+$estilo: (color: crimson, tamañoFuente xx-large);
+.header {        
+  background-color: map-get($estilo, color);  
+  h1{
+      font-size: map-get($estilo, tamañoFuente);
+    }
+}

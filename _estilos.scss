@@ -1,0 +1,89 @@
+@import "header";
+@import "nav";
+@import "mapas";
+@import "extend";
+@import "mixin";
+
+ 
+  
+  
+
+  .main {
+    padding: 0 3rem;
+  }
+  
+  
+  
+  
+  /* desde aca Footer */
+  .colorButtom{
+    background-color: crimson;
+    border: black;
+    color:white bold;
+  }
+  
+  
+  /* ****** Quienes Somos************* */
+  .subtitulo{
+    text-align: center;
+  }
+    
+  .quienesSomos {
+    border: crimson solid 2px;
+    margin: 10px 10px 15px 10px 20px;
+    padding: 200px;
+    text-align: center;
+    font-size:x-large;
+    text-align: center;
+    
+  }
+  
+  /* **********************Ofertas************************** */
+  
+  .imgCarrousel{
+    margin: 5px;
+    background-color: rgb(204, 202, 202);
+    height: 700px;
+    object-fit:scale-down;
+  }
+  
+  .textoCarrousel{
+    color: crimson;
+  }
+  
+  /*GRID  GALERIA MULTIMEDIA*/
+  
+  .gridPadreMultimedia {
+   margin:300px;
+   padding: 10px;
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 1fr  1fr;
+   row-gap: 25px; 
+  }
+
+  //Responsive Galeria Multimedia
+
+  @media (max-width:993px) {
+    .gridPadreMultimedia {
+        grid-template-columns: 1fr;  
+         }
+      }  
+  
+  /************ TIENDA *************/
+.p-tienda{
+  text-align: center;
+}
+  
+  .card{
+    margin: auto;
+   
+  }
+          
+          .hover2:hover{
+            background-color: #a23238;
+            color: white;
+            height: 25px;
+            height: 25px;
+            transition: all 2s;
+          }
