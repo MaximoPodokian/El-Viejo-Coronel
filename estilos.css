@@ -41,6 +41,7 @@ h2 {
   padding: 10px; margin: 10px; border: 2px solid crimson; width: 1700px;
   margin-left: auto; 
   margin-right: auto;
+  opacity: 0,5;
  
 }
 /*responsive para seccion home*/

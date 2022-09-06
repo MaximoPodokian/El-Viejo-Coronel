@@ -1,0 +1,10 @@
+@mixin colorButtomMuestra{
+    background-color: crimson;
+    border: black;
+    color:white bold;
+  }
+
+.colorButtomMixin{
+ @include colorButtomMuestra;
+}
+    
