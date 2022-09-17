@@ -1,6 +1,12 @@
+
+
+
 .header {
     display: flex;
     justify-content: center;
+    .nav-link{
+      color:crimson;
+    }
     
 
     h1 {
@@ -11,6 +17,7 @@
          margin-top: 2rem;
         
       }
+      
     }
 
       
@@ -22,6 +29,8 @@
       
       .logo {
         width: 6rem;
+
+       
       }
 
       
