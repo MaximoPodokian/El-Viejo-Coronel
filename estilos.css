@@ -1,11 +1,13 @@
 .header {
   display: flex;
   justify-content: center;
+  background-color: crimson;
 }
 .header .nav-link {
   color: crimson;
 }
-.header h1 {
+
+h1 {
   display: flex;
   font-weight: bold;
   color: white;
@@ -28,9 +30,9 @@ h2 {
 }
 
 .hover1:hover {
-  background-color: crimson;
-  border-radius: 10px;
+  background-color: rgb(218, 119, 138);
   color: white;
+  border-radius: 10px;
   transition: all 1s;
 }
 
@@ -52,78 +54,6 @@ h3 {
   padding: 0 3rem;
 }
 
-/* ****** Quienes Somos************* */
-.subtitulo {
-  text-align: center;
-}
-
-.quienesSomos {
-  border: crimson solid 2px;
-  margin: 10px 10px 15px 10px 20px;
-  padding: 50px;
-  text-align: center;
-  font-size: x-large;
-  text-align: center;
-}
-
-/* ***********responsive Quienes Somos********* */
-@media (max-width: 993px) {
-  .quienesSomos {
-    max-height: 700px;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .textoQuienesSomos {
-    font-size: medium;
-  }
-}
-/* **********************Ofertas************************** */
-.imgCarrousel {
-  margin: 5px;
-  background-color: rgb(204, 202, 202);
-  height: 700px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-}
-
-.textoCarrousel {
-  color: crimson;
-}
-
-/************ TIENDA *************/
-.p-tienda {
-  text-align: center;
-}
-
-.card {
-  margin: 100px;
-}
-
-.hover2:hover {
-  background-color: #a23238;
-  color: white;
-  height: 25px;
-  height: 25px;
-  transition: all 2s;
-}
-
-.header {
-  background-color: crimson;
-  display: flex;
-  justify-content: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-align: none;
-  list-style: none;
-}
-
 /* ***************Header************* */
 .imgPrincipal {
   max-height: 700px;
@@ -135,10 +65,37 @@ h3 {
   margin-right: auto;
 }
 
+.imagenSuperpuesta {
+  height: 350px;
+  width: 450px;
+  background-color: #cfc0c0;
+  border-radius: 25px;
+  margin: 0px auto;
+  margin-left: 700px;
+  position: absolute;
+  top: 45%;
+  opacity: 0.78;
+  filter: alpha(opacity=30);
+}
+
 /*responsive para seccion home*/
 @media (max-width: 993px) {
   .imgPrincipal {
     height: 200px;
+  }
+}
+@media (max-width: 1450px) {
+  .imagenSuperpuesta {
+    height: 0px;
+    width: 0px;
+    background-color: none;
+    border-radius: 0px;
+    margin: none;
+    margin-left: 0px;
+    position: none;
+    top: 0%;
+    opacity: 0;
+    filter: alpha(opacity=0);
   }
 }
 .containerPrincipal {
@@ -152,11 +109,128 @@ h3 {
   position: absolute;
 }
 
+/* ****** Quienes Somos************* */
+.subtitulo {
+  text-align: center;
+}
+
+.quienesSomos {
+  border: crimson solid 2px;
+  margin: 10px 10px 15px 10px 20px;
+  padding: 50px;
+  text-align: center;
+  font-size: x-large;
+}
+
+/* ***********responsive Quienes Somos********* */
+@media (max-width: 993px) {
+  .h1responsive {
+    font-size: none;
+  }
+  .quienesSomos {
+    padding: 5px;
+    margin: 0px 0px 0px 0px 0px;
+    border: none;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .textoQuienesSomos {
+    font-size: small;
+  }
+}
+/************ TIENDA *************/
+.card {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.tarjetaTienda {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 250px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/Img/imgTrabajadasDeVinos/fondoBody.jpg);
+}
+
+.pVinos {
+  color: #b9343b;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.botonCarrito {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  background-color: crimson;
+  width: 200px;
+  height: 25px;
+  border-radius: 25px;
+  color: white;
+}
+.botonCarrito .hover2:hover {
+  background-color: white;
+  color: crimson;
+}
+
+.hover2:hover {
+  background-color: white;
+  border-radius: 10px;
+  color: crimson;
+  transition: all 1s;
+}
+
+@media (max-width: 1500px) {
+  .card {
+    grid-template-columns: 3, 1fr;
+  }
+  .card .tarjetaTienda {
+    width: 200px;
+    height: auto;
+  }
+  .card .botonCarrito {
+    width: 120px;
+    height: 25px;
+    font-size: small;
+  }
+  .logo {
+    width: 3rem;
+  }
+}
+@media (max-width: 1105px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card .tarjetaTienda {
+    width: 200px;
+    height: auto;
+  }
+  .card .botonCarrito {
+    width: 120px;
+    height: 25px;
+    font-size: small;
+  }
+  .logo {
+    width: 3rem;
+  }
+}
 /* **********************Ofertas************************** */
 .imgCarrousel {
   margin: 5px;
-  background-color: rgb(204, 202, 202);
-  height: 700px;
+  background-color: rgb(226, 210, 179);
+  background-image: url(img/imgTrabajadasDeVinos/logoAtamisque.png);
+  background-repeat: no-repeat;
+  height: 450px;
   -o-object-fit: scale-down;
   object-fit: scale-down;
 }
@@ -165,6 +239,11 @@ h3 {
   color: crimson;
 }
 
+@media (max-width: 900px) {
+  .textoCarrousel {
+    font-size: 15px;
+  }
+}
 /*********************** GALERIA MULTIMEDIA************************************************/
 .PadreMultimedia {
   display: grid;
@@ -194,27 +273,6 @@ h3 {
     max-height: none;
   }
 }
-/************ TIENDA *************/
-.p-tienda {
-  text-align: center;
-}
-
-.card {
-  margin: 50px;
-}
-
-.hover2:hover {
-  background-color: #a23238;
-  color: white;
-  height: 25px;
-  height: 25px;
-  transition: all 2s;
-}
-
-.btn {
-  background-color: crimson;
-}
-
 /************************form contacto***********************************************/
 .contenedorFC {
   max-height: 700px;
@@ -227,20 +285,34 @@ h3 {
 }
 
 /* Responsive Form Contacto */
-@media (max-width: 993px) {
+@media (max-width: 1215px) {
   .contenedorFC {
     max-height: 700px;
     padding: 10px;
     margin: 10px;
     border: none;
-    width: 400px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-/* desde aca Footer */
+/************************ desde aca Footer **************************/
 .colorButtom {
   background-color: crimson;
   border: black;
   color: white bold;
+}
+
+.dataFiscal {
+  display: flex;
+  width: 60px;
+  height: 80px;
+}
+
+@media (max-width: 630px) {
+  .dataFiscal {
+    display: flex;
+    width: 0px;
+    height: 0px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

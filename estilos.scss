@@ -1,7 +1,6 @@
 @import "header";
 @import "nav";
 
-
 .header h1 {
   display: flex;
   font-size: xx-large;
@@ -10,226 +9,280 @@
   text-align: center;
   margin-top: 2rem;
 }
- 
+
 h3 {
-            
   font-size: 30px;
   text-align: center;
 }
 
-  
+.main {
+  padding: 0 3rem;
+}
 
-  .main {
-    padding: 0 3rem;
-  }
-  
- 
-  
-  
-  /* ****** Quienes Somos************* */
-  .subtitulo{
-    text-align: center;
-  }
-    
-  .quienesSomos {
-    //background-image:url(/Img/imgTrabajadasDeVinos/fondoBody.jpg);
-    //background-repeat: no-repeat ;
-    border: crimson solid 2px;
-    margin: 10px 10px 15px 10px 20px;
-    padding: 50px;
-    text-align: center;
-    font-size:x-large;
-    text-align: center;
-    
-  }
-/* ***********responsive Quienes Somos********* */
-  @media (max-width: 993px) {
-    .quienesSomos {
-    max-height: 700px;
-    padding: 10px; margin: 10px; border: none; width: 400px;
-    margin-left: auto; 
-    margin-right: auto;
-    
-    }
-    .textoQuienesSomos{
-      font-size: medium;
-    }
-  }
-  
-  /* **********************Ofertas************************** */
-  
-  .imgCarrousel{
-    margin: 5px;
-    background-color: rgb(204, 202, 202);
-    height: 700px;
-    object-fit:scale-down
-  }
-  
-  .textoCarrousel{
-    color: crimson;
-  }
-  
-  
-  
-  /************ TIENDA *************/
+/* ***************Header************* */
 
-  
-.p-tienda{
+.imgPrincipal {
+  max-height: 700px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid crimson;
+  width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imagenSuperpuesta {
+  height: 350px;
+  width: 450px;
+  background-color: #cfc0c0;
+  border-radius: 25px;
+  margin: 0px auto;
+  margin-left: 700px;
+  position: absolute;
+  top: 45%;
+  opacity: 0.78;
+  filter: alpha(opacity=30);
+}
+
+/*responsive para seccion home*/
+@media (max-width: 993px) {
+  .imgPrincipal {
+    height: 200px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .imagenSuperpuesta {
+    height: 0px;
+    width: 0px;
+    background-color: none;
+    border-radius: 0px;
+    margin: none;
+    margin-left: 0px;
+    position: none;
+    top: 0%;
+    opacity: 0.00;
+    filter: alpha(opacity=00);
+  }
+}
+
+.containerPrincipal {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redesSociales {
+  position: absolute;
+}
+
+/* ****** Quienes Somos************* */
+.subtitulo {
   text-align: center;
 }
-  
-  .card{
-    margin: 100px;
-   
+
+.quienesSomos {
+  border: crimson solid 2px;
+  margin: 10px 10px 15px 10px 20px;
+  padding: 50px;
+  text-align: center;
+  font-size: x-large;
+}
+/* ***********responsive Quienes Somos********* */
+@media (max-width: 993px) {
+  .h1responsive {
+    font-size: none;
   }
-          
-          .hover2:hover{
-            background-color: #a23238;
-            color: white;
-            height: 25px;
-            height: 25px;
-            transition: all 2s;
-          }
-
-          .header {
-            background-color: crimson;
-            display: flex;
-            justify-content: center;
-          }
-          
-                  
-          * {
-            margin: 0;
-            padding: 0;
-            text-align: none;
-            list-style: none;
-          }
-          
-          /* ***************Header************* */
-          
-          .imgPrincipal {
-            max-height: 700px;
-            padding: 10px; margin: 10px; border: 2px solid crimson; width: 1700px;
-            margin-left: auto; 
-            margin-right: auto;
-            
-          }
-          /*responsive para seccion home*/
-                @media (max-width:993px) {
-                  .imgPrincipal {
-                    height: 200px;  
-                      }
-                  }  
-          
-          
-          .containerPrincipal {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
-            
-          }
-          
-          .redesSociales{
-            position:absolute;
-            
-            }
-          
-          /* **********************Ofertas************************** */
-          .imgCarrousel {
-            margin: 5px;
-            background-color: rgb(204, 202, 202);
-            height: 700px;
-            -o-object-fit: scale-down;
-               object-fit: scale-down;
-          }
-          
-          .textoCarrousel {
-            color: crimson;
-          }
-          
-          /*********************** GALERIA MULTIMEDIA************************************************/
-          .PadreMultimedia {
-            display: grid;
-            max-height: 700px;
-            margin: 1px;
-            padding: 50px; 
-            grid-template-columns: 500px 500px; 
-            grid-template-rows: 250px 250px 250px 200px;
-            justify-content: center;
-          
-          } 
-
-          .titulosMultimedia{
-            font-size: medium;
-            font-style:oblique bold;
-            color: crimson;
-            justify-items: center;
-          }
-          
-           //Responsive Galeria Multimedia
-         
-           @media (max-width:993px) {
-             .gridPadreMultimedia {
-                 grid-template-columns: 1fr;  
-                  }
-               }  
-
-          @media (max-width: 811px) {
-            .PadreMultimedia {
-              grid-template-columns: 1fr;
-              max-height: none;
-            
-            }
-
-            }
-                        
-          /************ TIENDA *************/
-          .p-tienda {
-            text-align: center;
-          }
-          
-          .card {
-            margin:50px;
-           
-            
-          }
-          
-          .hover2:hover {
-            background-color: #a23238;
-            color: white;
-            height: 25px;
-            height: 25px;
-            transition: all 2s;
-          }
-          .btn{
-            background-color: crimson;
-          }
-
-          
-          /************************form contacto***********************************************/
-          .contenedorFC{
-            max-height: 700px;
-            padding: 10px; margin: 10px; border: 2px solid crimson; width: 1400px;
-            margin-left: auto; 
-            margin-right: auto;
-          
-          }
-          /* Responsive Form Contacto */
-          
-           @media (max-width: 993px) {
-            .contenedorFC {
-            max-height: 700px;
-            padding: 10px; margin: 10px; border: none; width: 400px;
-            margin-left: auto; 
-            margin-right: auto;
-            
-            }
-          }
-
-          /* desde aca Footer */
-  .colorButtom{
-    background-color: crimson;
-    border: black;
-    color:white bold;
+  .quienesSomos {
+    padding: 5px;
+    margin: 0px 0px 0px 0px 0px;
+    border: none;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
+  .textoQuienesSomos {
+    font-size: small;
+  }
+}
+
+
+
+
+/************ TIENDA *************/
+.card {
+display: grid;
+padding: 50px;
+grid-template-columns: repeat(5, 1fr);
+grid-gap: 10px;
+text-align: center;
+}
+.tarjetaTienda {
+padding: 10px;
+margin: 10px;
+ border: 2px solid black;
+border-radius: 25px;
+ width: 250px;
+height: 550px;
+ margin-left: auto;
+margin-right: auto;
+background-image: url(/Img/imgTrabajadasDeVinos/fondoBody.jpg);
+ }
+.pVinos {
+ color: #b9343b;
+font-weight: 600;
+font-size: medium;
+}
+.botonCarrito {
+ padding: 0;
+margin: 0;
+text-decoration: none;
+text-align: center;
+background-color: crimson;
+width: 200px;
+height: 25px;
+border-radius: 25px;
+color: white;
+.hover2:hover {
+background-color: white;
+color: crimson;
+}
+}
+ .hover2:hover {
+ background-color: white;
+  border-radius: 10px;
+ color: crimson;
+ transition: all 1s;
+}
+
+
+
+@media (max-width: 1500px) {
+.card {
+grid-template-columns:3, 1fr;
+ .tarjetaTienda {
+ width: 200px;
+ height: auto;
+}
+.botonCarrito {
+ width: 120px;
+ height: 25px;
+font-size: small;
+}
+ }
+ .logo {
+ width: 3rem;
+}
+}
+
+@media (max-width: 1105px) {
+  .card {
+  grid-template-columns: 1fr;
+   .tarjetaTienda {
+   width: 200px;
+   height: auto;
+  }
+  .botonCarrito {
+   width: 120px;
+   height: 25px;
+  font-size: small;
+  }
+   }
+   .logo {
+   width: 3rem;
+  }
+  }
+
+
+/* **********************Ofertas************************** */
+.imgCarrousel {
+  margin: 5px;
+  background-color:rgb(226, 210, 179) ;
+  background-image: (url(img/imgTrabajadasDeVinos/logoAtamisque.png));
+  background-repeat: no-repeat;
+  height: 450px;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+}
+
+.textoCarrousel {
+  color: crimson;
+}
+
+
+/*********************** GALERIA MULTIMEDIA************************************************/
+.PadreMultimedia {
+  display: grid;
+  max-height: 700px;
+  margin: 1px;
+  padding: 50px;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 250px 250px 250px 200px;
+  justify-content: center;
+}
+
+.titulosMultimedia {
+  font-size: medium;
+  font-style: oblique bold;
+  color: crimson;
+  justify-items: center;
+}
+
+//Responsive Galeria Multimedia
+
+@media (max-width: 993px) {
+  .gridPadreMultimedia {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 811px) {
+  .PadreMultimedia {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+}
+
+/************************form contacto***********************************************/
+.contenedorFC {
+  max-height: 700px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid crimson;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Responsive Form Contacto */
+
+@media (max-width: 1215px) {
+  .contenedorFC {
+    max-height: 700px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/************************ desde aca Footer **************************/
+.colorButtom {
+  background-color: crimson;
+  border: black;
+  color: white bold;
+}
+.dataFiscal{
+  display: flex;
+  width: 60px;
+  height: 80px;
+}
+@media (max-width: 630px) {
+  .dataFiscal {
+    display: flex;
+    width: 0px;
+    height: 0px;
+    
+  }
+}
