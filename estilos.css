@@ -239,11 +239,6 @@ h3 {
   color: crimson;
 }
 
-@media (max-width: 900px) {
-  .textoCarrousel {
-    font-size: 15px;
-  }
-}
 /*********************** GALERIA MULTIMEDIA************************************************/
 .PadreMultimedia {
   display: grid;
